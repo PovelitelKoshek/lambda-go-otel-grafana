@@ -1,0 +1,15 @@
+bootstrap
+*.zip
+*.log
+
+response.json
+response-*.json
+fail-response.json
+fail-response-*.json
+
+.env
+env.json
+
+.DS_Store
+.idea/
+.vscode/
