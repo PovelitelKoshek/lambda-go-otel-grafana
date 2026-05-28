@@ -32,7 +32,7 @@ Grafana Cloud OTLP endpoint
     ↓
 Tempo + Metrics
 
-Why OpenTelemetry SDK is inside the Lambda code
+## Why OpenTelemetry SDK is inside the Lambda code
 
 For traces and application-level metrics, the main application code has better context than an external extension.
 
@@ -51,13 +51,13 @@ Hybrid production approach
 
 A realistic production architecture can combine both approaches:
 
-Logs:
+## Logs:
 Lambda → Lambda Extension → Loki
 
-Traces:
+## Traces:
 Lambda code → OpenTelemetry SDK → Grafana Cloud OTLP → Tempo
 
-Metrics:
+## Metrics:
 Lambda code → OpenTelemetry SDK → Grafana Cloud OTLP → Metrics/Mimir
 Implemented metrics
 lambda4_requests_total
